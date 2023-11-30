@@ -1,9 +1,13 @@
 // import './App.css';
 
+import Search from "./components/Search"
+import SearchResult from "./components/SearchResult";
+
 function App() {
   return (
-    <div className=" text-3xl font-bold">
-      Hello World
+    <div className="">
+      <Search/>
+      <SearchResult/>
     </div>
   );
 }
