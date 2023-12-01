@@ -1,13 +1,19 @@
 // import './App.css';
 
 import Search from "./components/Search"
-import SearchResult from "./components/SearchResult";
+import SearchPage from "./components/SearchPage";
+// import SearchResult from "./components/SearchResult";
+import {BrowserRouter as Router, Routes,Route} from "react-router-dom"
 
 function App() {
   return (
     <div className="">
-      <Search/>
-      <SearchResult/>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Search/>}></Route>
+          <Route path="/search" element={<SearchPage/>}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }
